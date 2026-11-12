@@ -1,0 +1,11 @@
+name: test
+description: test
+on:
+  label: 
+    types: [created,deleted,edited]
+jobs:
+  test:
+    name: test workflow job
+    runs-on: ubuntu-slim
+    steps:
+      - run: echo "test"
